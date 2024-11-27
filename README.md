@@ -41,6 +41,7 @@ To use this package, you need the following ROS2 package:
 Make sure to install and set up `usb_cam` correctly before running the node.
 
 ---
+- **Example Images**: Placeholders for your example images (`color.png` and `gray.png`).
 
 ## How to Run
 
@@ -51,12 +52,13 @@ To launch the image conversion node and the camera:
 ```bash
 ros2 launch cpp_package start.launch.py
 
-```bash
+next terminal
+
 ros2 service call /change_mode std_srvs/srv/SetBool "{data: true}"
 
-```bash
+next terminal
+
 ros2 run image_view image_view --ros-args -r image:=/camera1/image_out
 
 
-- **Example Images**: Placeholders for your example images (`color.png` and `gray.png`).
 

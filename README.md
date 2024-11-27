@@ -70,5 +70,11 @@ next terminal
 
 ros2 run image_view image_view --ros-args -r image:=/camera1/image_out
 
+## Data Flow
+
+the data from usb_cam (camera1/image_raw) and the output is publish to (camera1/image_out)
+- **Color Mode**:
+  <img src="./tree.jpeg" width="300" alt="data flow"/>
+
 
 

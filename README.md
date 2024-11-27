@@ -41,9 +41,16 @@ To use this package, you need the following ROS2 package:
 Make sure to install and set up `usb_cam` correctly before running the node.
 
 ---
-- **Example Images**: Placeholders for your example images (`color.png` and `gray.png`).
-![Color Image](./color.png)
-![Grayscale Image](./gray.png)
+### Example Images
+
+The following images demonstrate the output in both modes:
+
+- **Color Mode**:
+  <img src="./color.png" width="300" alt="Color Image"/>
+
+- **Grayscale Mode**:
+  <img src="./gray.png" width="300" alt="Grayscale Image"/>
+
 
 
 ## How to Run

@@ -42,6 +42,9 @@ Make sure to install and set up `usb_cam` correctly before running the node.
 
 ---
 - **Example Images**: Placeholders for your example images (`color.png` and `gray.png`).
+![Color Image](./color.png)
+![Grayscale Image](./gray.png)
+
 
 ## How to Run
 

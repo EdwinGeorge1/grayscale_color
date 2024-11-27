@@ -27,8 +27,8 @@ The node then processes and publishes the image accordingly.
 
 ### Node Details
 
-- **Subscribes to**: `/usb_cam/image_raw` (Image topic from the `usb_cam` package)
-- **Publishes to**: `/image_conversion/image_out` (Processed image topic)
+- **Subscribes to**: `/camera1/image_raw` (Image topic from the `usb_cam` package)
+- **Publishes to**: `/camera1/image_out` (Processed image topic)
 
 ---
 
@@ -76,6 +76,7 @@ ros2 service call /change_mode std_srvs/srv/SetBool "{data: true}"
 next terminal
 
 ros2 run image_view image_view --ros-args -r image:=/camera1/image_out
+
 
 
 

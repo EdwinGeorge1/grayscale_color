@@ -52,7 +52,14 @@ The following images demonstrate the output in both modes:
   <img src="./gray.png" width="300" alt="Grayscale Image"/>
 
 
+## Data Flow
 
+The data flow starts with the **usb_cam** package, which captures the raw image from the camera and publishes it to the `camera1/image_raw` topic. The **image_conversion** node then processes this image based on the selected mode (Color or Grayscale) and publishes the output to the `camera1/image_out` topic.
+
+- **Color Mode**:
+  <img src="./tree.jpeg" width="300" alt="Data Flow Diagram"/>
+
+  
 ## How to Run
 
 ### Launching the Node
@@ -70,11 +77,12 @@ next terminal
 
 ros2 run image_view image_view --ros-args -r image:=/camera1/image_out
 
-## Data Flow
 
-the data from usb_cam (camera1/image_raw) and the output is publish to (camera1/image_out)
-- **Color Mode**:
-  <img src="./tree.jpeg" width="300" alt="data flow"/>
+
+
+
+
+
 
 
 
